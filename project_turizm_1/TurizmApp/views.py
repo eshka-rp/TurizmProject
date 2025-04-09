@@ -8,3 +8,6 @@ def test(request):
 
 def tes(request):
     return render(request, 'TurizmApp/tes.html')
+
+
+#тест
