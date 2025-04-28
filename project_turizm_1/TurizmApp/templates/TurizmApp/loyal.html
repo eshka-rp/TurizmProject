@@ -9,16 +9,16 @@
 </head>
 
 <body>
-    <aside>
+<aside>
         <img src="{% static 'TurizmApp/img/picture.jpg' %}" id="chel">
         <span class="picha">TurizmProject</span>
         <h3>Навигация</h3>
         <ul>
-            <a href="{% url 'home' %}"><li><i class="fa-solid fa-house"></i> Главная</li></a>
-            <a href="{% url 'test' %}"><li><i class="fa-solid fa-pen-to-square"></i> Тест</li></a>
-            <a href="{% url 'tes' %}"><li><i class="fa-solid fa-phone"></i> (tes) как отдельная страничка</li></a>
+            <a href="{% url 'home' %}"><li><i class="fa-solid fa-house"></i>Главная</li></a>
+            <a href="{% url 'test' %}"><li><button class="btn btn-success"><i class="fas fa-plus-circle"></i> Добавить запись</button></li></a>
+
         </ul>
-    </aside>
+</aside>
         {% block content %}
         {% endblock %}
 

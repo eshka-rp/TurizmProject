@@ -1,6 +1,23 @@
 @media (max-width: 2560px) {
+    form {
+
+    }
+
+    .form-control {
+    width: 50%;
+    }
+
     body {
         background: #9bbfe8;
+    }
+
+    .features h1{
+        color: #274a7c;
+        text-align: center;
+    }
+
+    .features {
+        text-align: center;
     }
 
     aside {
@@ -40,14 +57,15 @@
 
     .btn-warning, .btn-warning:hover, .btn-primary:active, .btn-primary:visited {
         background-color: #ab8e6d;
+
     }
 }
-
 
 @media (max-width: 1024px) {
     body {
         background: #9bbfe8;
     }
+
 
     aside {
         float: left;

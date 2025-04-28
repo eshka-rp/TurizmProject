@@ -3,5 +3,12 @@
 {% block title%} SECOND PAGE {% endblock %}
 
 {% block content %}
-    <h1>йо это вторая страничка</h1>
+    <h1>Форма для добавления результатов</h1>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" placeholder="ID участника" class="form-control"><br>
+        <input type="time" step="1" placeholder="Время старта" class="form-control"><br>
+        <input type="time" step="1" placeholder="Время финиша" class="form-control"><br>
+        <button class="btn btn-primary" type="submit">Отправить результат</button>
+    </form>
 {% endblock %}
