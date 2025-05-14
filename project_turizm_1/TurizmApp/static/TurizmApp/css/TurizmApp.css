@@ -1,7 +1,4 @@
 @media (max-width: 2560px) {
-    form {
-
-    }
 
     .form-control {
     width: 50%;
@@ -9,6 +6,11 @@
 
     body {
         background: #9bbfe8;
+
+    }
+
+    .blue_fon {
+        margin: 2%;
     }
 
     .features h1{
@@ -20,6 +22,12 @@
         text-align: center;
     }
 
+    .navigation {
+        transition: 1s;
+
+        opacity: 0;
+    }
+
     aside {
         float: left;
         background: #826749;
@@ -28,7 +36,19 @@
         height: 100vh;
         color: #e3cfb8;
         border-right: 5px solid #e3cfb8;
+        position: fixed;
+        margin-top: -2%;
 
+
+    }
+
+    #give {
+        position: fixed;
+        right: 0%;
+    }
+
+    .give_a_navigation {
+        opacity: 1.0;
     }
 
     #pic2 {
@@ -97,7 +117,7 @@
     aside {
         float: left;
         background: #826749;
-        width: 30%;
+        width: 22%;
         padding: 1.1%;
         height: 100vh;
         color: #e3cfb8;
@@ -146,7 +166,7 @@
     aside {
         float: left;
         background: #826749;
-        width: 33%;
+        width: 22%;
         padding: 1.1%;
         margin 5px;
         height: 100vh;

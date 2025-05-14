@@ -9,18 +9,27 @@
 </head>
 
 <body>
-<aside>
-        <img src="{% static 'TurizmApp/img/picture.jpg' %}" id="chel">
-        <span class="picha">TurizmProject</span>
-        <h3>Навигация</h3>
-        <ul>
-            <a href="{% url 'home' %}"><li><i class="fa-solid fa-house"></i>Главная</li></a>
-            <a href="{% url 'test' %}"><li><button class="btn btn-success"><i class="fas fa-plus-circle"></i> Добавить запись</button></li></a>
+<div class="navigation">
+    <aside>
+            <img src="{% static 'TurizmApp/img/picture.jpg' %}" id="chel">
+            <span class="picha">TurizmProject</span>
+            <h3>Навигация</h3>
+            <ul>
+                <a href="{% url 'home' %}"><li><i class="fa-solid fa-house"></i>Главная</li></a>
+                <a href="{% url 'test' %}"><li><button class="btn btn-success"><i class="fas fa-plus-circle"></i> Добавить запись</button></li></a>
 
-        </ul>
-</aside>
+            </ul>
+    </aside>
+</div>
+<button class="button" id="give">
+    <h2 class="button_text">
+        Навигация
+    </h2>
+</button>
+        <div class="blue_fon">
         {% block content %}
         {% endblock %}
-
+        </div>
 </body>
+<script src="{% static 'TurizmApp/js/buttom.js' %}"></script>
 </html>

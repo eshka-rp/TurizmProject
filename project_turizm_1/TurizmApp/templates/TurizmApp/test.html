@@ -1,14 +1,17 @@
 {% extends 'TurizmApp/loyal.html' %}
 
-{% block title%} SECOND PAGE {% endblock %}
+{% block title%} Добавление записи {% endblock %}
 
 {% block content %}
-    <h1>Форма для добавления результатов</h1>
-    <form method="post">
-        {% csrf_token %}
-        <input type="text" placeholder="ID участника" class="form-control"><br>
-        <input type="time" step="1" placeholder="Время старта" class="form-control"><br>
-        <input type="time" step="1" placeholder="Время финиша" class="form-control"><br>
-        <button class="btn btn-primary" type="submit">Отправить результат</button>
-    </form>
+    <div>
+        <h1>Форма для добавления результатов</h1>
+        <form method="post">
+            {% csrf_token %}
+            <input type="text" placeholder="ID участника" class="form-control"><br>
+            <input type="time" step="1" placeholder="Время старта" class="form-control"><br>
+            <input type="time" step="1" placeholder="Время финиша" class="form-control"><br>
+            <button class="btn btn-primary" type="submit">Отправить результат</button>
+        </form>
+
+    </div>
 {% endblock %}

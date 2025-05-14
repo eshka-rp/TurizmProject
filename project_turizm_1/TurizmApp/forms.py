@@ -1,9 +1,14 @@
 # from django import forms
 #
-# class RegistrationForm(ModelForm):
-#     id_user = forms.IntegerField()
-#     start_time = forms.TimeField()
-#     finish_time = forms.TimeField()
-
-from models import Registration
-from django.forms import ModelForm
+# from .models import RegistrationModel
+#
+#
+# class RegistrationForm(forms.ModelForm):
+#     class Meta:
+#         model = RegistrationModel
+#         fields = "__all__"
+#         labels = {
+#             'id_user' : 'ID участника',
+#             'start_time': 'Время старта',
+#             'finish_time': 'Время финиша',
+#         }

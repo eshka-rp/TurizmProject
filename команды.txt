@@ -1,1 +1,5 @@
  python manage.py runserver - запуск сервера
+
+имя и пароль: admin, turizmproject
+закрепить навигацию:
+кнопка открытия меню:
