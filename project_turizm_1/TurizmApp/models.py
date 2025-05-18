@@ -1,7 +1,7 @@
 from django.db import models
 
 class RegistrationModel(models.Model):
-    id_user = models.IntegerField('ID участника')
+    id_user = models.IntegerField('ID участника', unique=True)
     start_time = models.TimeField('Время старта')
     finish_time = models.TimeField('Время финиша')
 

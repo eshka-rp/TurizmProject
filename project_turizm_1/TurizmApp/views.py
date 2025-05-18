@@ -1,5 +1,8 @@
+from dbm import error
+
 from django.shortcuts import render
 from .models import RegistrationModel
+from .forms import RegistrationForm
 
 
 def index(request):
@@ -7,6 +10,21 @@ def index(request):
 
 
 def test(request):
+    error = ''
+    if request.method == 'POST':
+        form = RegistrationForm(request.POST)
+        if form.is_valid():
+            form.save()
+        else:
+            error = 'Некорректное заполнение'
+
     reg = RegistrationModel.objects.all()
-    return render(request, 'TurizmApp/test.html', {'reg': reg})
+    form = RegistrationForm()
+
+    data = {
+        'form' : form,
+        'error': error
+    }
+
+    return render(request, 'TurizmApp/test.html', data)
 

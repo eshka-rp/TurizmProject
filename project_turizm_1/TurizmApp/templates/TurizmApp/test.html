@@ -4,12 +4,14 @@
 
 {% block content %}
     <div>
-        <h1>Форма для добавления результатов</h1>
+        <h1 style="width: 100%; text-align: center;">Форма для добавления результатов</h1><br>
         <form method="post">
             {% csrf_token %}
-            <input type="text" placeholder="ID участника" class="form-control"><br>
-            <input type="time" step="1" placeholder="Время старта" class="form-control"><br>
-            <input type="time" step="1" placeholder="Время финиша" class="form-control"><br>
+            {{ form.id_user }}<br>
+            {{ form.start_time }}<br>
+            {{ form.finish_time }}<br>
+            <span>{{ error }}</span><br><br>
+
             <button class="btn btn-primary" type="submit">Отправить результат</button>
         </form>
 
