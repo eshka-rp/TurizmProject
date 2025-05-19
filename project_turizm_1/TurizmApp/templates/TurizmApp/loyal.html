@@ -16,15 +16,15 @@
             <h3>Навигация</h3>
             <ul>
                 <a href="{% url 'home' %}"><li><i class="fa-solid fa-house"></i>Главная</li></a>
-                <a href="{% url 'test' %}"><li><button class="btn btn-success"><i class="fas fa-plus-circle"></i> Добавить запись</button></li></a>
+                <a href="{% url 'test' %}"><li><button class="btn custom-btn"><i class="fas fa-plus-circle"></i> Добавить запись</button></li></a>
 
             </ul>
     </aside>
 </div>
-<button class="button" id="give">
-    <h2 class="button_text">
+<button class="btn custom-btn" id="give">
+    <h6 class="button_text">
         Навигация
-    </h2>
+    </h6>
 </button>
         <div class="blue_fon">
         {% block content %}
